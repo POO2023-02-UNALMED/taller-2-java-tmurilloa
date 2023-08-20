@@ -23,22 +23,22 @@ public class Auto {
 		
 	}
 	
-	String verificarIntegridad() {
-		
-		
-		if (motor.registro != this.registro) {
-			
-			return "Las piezas no son originales";
-		
-		}
-		for (int i = 0; i < asientos.length; ++i ) {
-			
-			if (asientos[i].registro != this.registro) {
-				
+	String verificarIntegridad() 
+	{
+		for (int i = 0; i < asientos.length; ++i ) 
+		{
+			if (asientos[i].registro != this.registro) 
+			{
 				return "Las piezas no son originales";
-		
 			}
 		}
-		return "Auto original";
+		if (motor.registro != this.registro)
+		{
+			return "Las piezas no son originales";
+			
+		}else 
+		{
+			return "Auto original";
+		}
 	}
 }
