@@ -34,7 +34,7 @@ public class Auto {
 				return "Las piezas no son originales";
 			}
 		}
-		if (motor.registro != regisAuto)
+		if (this.motor.registro != regisAuto)
 		{
 			return "Las piezas no son originales";
 			
